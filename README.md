@@ -414,8 +414,8 @@ ollama pull qwen2.5
 
 **1. Cloner le repository**
 ```bash
-git clone https://github.com/votre-username/MUAG.git
-cd MUAG
+git clone https://github.com/SpendinFR/CUAOS.git
+cd CUAOS/MUAG
 ```
 
 **2. Créer environnement virtuel**
