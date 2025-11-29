@@ -11,7 +11,7 @@
 
 ## 📺 Démonstrations Vidéo
 
-### 1. 🧠 Mémoire & Conversation Contextuelle
+### 1.  Mémoire & Conversation Contextuelle
 *Démonstration de la persistance de la mémoire entre les sessions et du rappel des interactions passées.*
 
 > **Exemple :** "Quelle est notre dernière interaction ?"
@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/3cbb0a25-2d0e-4800-bcd8-b2f0d3ce6b40
 
 ---
 
-### 2. ⚡ Actions Rapides (Fast Path)
+### 2.  Actions Rapides (Fast Path)
 *Exécution instantanée sans planification pour les tâches simples - ouverture d'applications, fichiers, contrôle système.*
 
 > **Exemple :** Ouvrir un fichier texte sur le bureau
@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/3015e56e-e181-4c65-86ff-fc4ccf8ed7ae
 
 ---
 
-### 3. 🌐 Navigation Web & Extraction de Données
+### 3.  Navigation Web & Extraction de Données
 *Pipeline complète : recherche web → extraction d'informations → création de fichier automatique.*
 
 > **Exemple :** Chercher la météo et créer un fichier texte avec les résultats sur le bureau
@@ -38,7 +38,7 @@ https://github.com/user-attachments/assets/cf3debde-b943-4f05-ad5d-61e2fd17e1a6
 
 ---
 
-### 4. 👁️ Navigation Visuelle dans Applications Desktop (CUA)
+### 4.  Navigation Visuelle dans Applications Desktop (CUA)
 *Contrôle autonome d'applications tierces par vision pure - aucune API, juste comme un humain.*
 
 > **Exemple :** Ouvrir Spotify et naviguer dans les titres likés
@@ -47,7 +47,7 @@ https://github.com/user-attachments/assets/379c81b7-7fae-44c0-9359-e9f149e7d24e
 
 ---
 
-## 🏗️ Architecture Globale
+##  Architecture Globale
 
 MUAG repose sur une architecture de décision hybride qui optimise la latence, la fiabilité et les capacités autonomes.
 
@@ -117,9 +117,9 @@ graph TD
 
 ---
 
-## 🧠 Pipeline Détaillée
+##  Pipeline Détaillée
 
-### 1️⃣ Analyse d'Intention
+### 1️ Analyse d'Intention
 
 Chaque requête utilisateur passe par un **Intention Analyzer** (LLM) qui classifie la demande :
 
@@ -130,21 +130,21 @@ Chaque requête utilisateur passe par un **Intention Analyzer** (LLM) qui classi
 | **ACTION_COMPLEXE** | Tâche multi-étapes : navigation web, interaction app, création fichiers | → Task Orchestrator |
 
 **Exemples de classification :**
-- ❓ "Comment vas-tu ?" → CONVERSATION
-- ⚡ "Lance Spotify" → ACTION_SIMPLE
-- 🌐 "Cherche la météo et crée un fichier" → ACTION_COMPLEXE
+-  "Comment vas-tu ?" → CONVERSATION
+-  "Lance Spotify" → ACTION_SIMPLE
+-  "Cherche la météo et crée un fichier" → ACTION_COMPLEXE
 
 ---
 
-### 2️⃣ Fast Path (Actions Simples)
+### 2 Fast Path (Actions Simples)
 
 Exécution **immédiate** sans planification pour minimiser la latence.
 
 **Capacités :**
-- 🚀 **Lancement d'applications** : détection intelligente par nom (AppLauncher)
-- 🎚️ **Contrôle système** : volume, lecture média (play/pause/next), captures d'écran
-- 📂 **Gestion fichiers** : ouverture de fichiers/dossiers/URLs
-- ⌨️ **Raccourcis clavier** : copier/coller, sauvegarder, annuler, etc.
+-  **Lancement d'applications** : détection intelligente par nom (AppLauncher)
+-  **Contrôle système** : volume, lecture média (play/pause/next), captures d'écran
+-  **Gestion fichiers** : ouverture de fichiers/dossiers/URLs
+-  **Raccourcis clavier** : copier/coller, sauvegarder, annuler, etc.
 
 **Mapping intelligent :**
 ```python
@@ -156,7 +156,7 @@ Exécution **immédiate** sans planification pour minimiser la latence.
 
 ---
 
-### 3️⃣ Task Orchestrator (Actions Complexes)
+### 3 Task Orchestrator (Actions Complexes)
 
 Le cerveau tactique pour les **tâches multi-étapes**.
 
@@ -188,11 +188,11 @@ Tâche : "Va sur YouTube cherche Messi"
 
 ---
 
-### 4️⃣ CUA Agent (Computer Use Agent)
+### 4 CUA Agent (Computer Use Agent)
 
 Le cœur de l'innovation : un agent qui **voit** et **agit** comme un humain, sans API.
 
-#### 🔍 Pipeline Vision Avancée
+####  Pipeline Vision Avancée
 
 **Architecture Dual-VLM + OmniParser :**
 
@@ -318,7 +318,7 @@ Exemple de décision VLM #2 :
 
 ---
 
-### 5️⃣ Playwright Router (Fast-Path Web)
+### 5 Playwright Router (Fast-Path Web)
 
 **Optimisation hybride Vision + DOM :**
 
@@ -334,7 +334,7 @@ Avant le pipeline vision lourd, tentative d'exécution **directe via Playwright*
 
 ---
 
-### 6️⃣ WebHelper (Support Playwright Avancé)
+### 6 WebHelper (Support Playwright Avancé)
 
 **Capacités :**
 - Connexion CDP avec retry logic
@@ -353,22 +353,22 @@ input, textarea, [contenteditable='true'], [role='textbox']
 
 ---
 
-## ✨ Fonctionnalités Complètes
+##  Fonctionnalités Complètes
 
-### 🗣️ Interaction Multimodale
+###  Interaction Multimodale
 - **Full Duplex** : Entrée vocale (Whisper) + Sortie vocale (TTS)
 - **Mode texte** : Fallback pour debug ou utilisation silencieuse
 - **Mémoire persistante** : RAG avec consolidation de session
 - **Profil utilisateur** : Apprentissage automatique des préférences (ton, contexte)
 
-### ⚡ Contrôle Système (Direct)
+###  Contrôle Système (Direct)
 - Lancement d'applications intelligent (recherche fuzzy par nom)
 - Contrôle média complet (volume, lecture, pause, next/previous)
 - Gestion fichiers/dossiers (ouvrir, lire, créer, lister)
 - Raccourcis clavier système
 - Captures d'écran
 
-### 🌐 Navigation Web Autonome
+###  Navigation Web Autonome
 - Recherche Google/YouTube/etc.
 - Clic sur éléments (liens, boutons, menus)
 - Remplissage de formulaires
@@ -376,13 +376,13 @@ input, textarea, [contenteditable='true'], [role='textbox']
 - Lecture de contenu de page
 - Gestion automatique des popups/cookies
 
-### 🖥️ Contrôle Desktop Avancé
+###  Contrôle Desktop Avancé
 - **Navigation visuelle pure** : Peut piloter **n'importe quelle** application
 - Spotify, Discord, VSCode, applications custom
 - Pas besoin d'API : utilise uniquement la vision
 - Détection d'intervention utilisateur (CAPTCHA, login)
 
-### 🛡️ Sécurités Intégrées
+###  Sécurités Intégrées
 - Garde-fous pour empêcher suppressions accidentelles
 - Détection de boucles infinies
 - Timeouts adaptatifs
@@ -391,7 +391,7 @@ input, textarea, [contenteditable='true'], [role='textbox']
 
 ---
 
-## 🛠️ Installation
+##  Installation
 
 ### Pré-requis
 - **Python 3.10+**
@@ -470,7 +470,7 @@ google-chrome --remote-debugging-port=9222
 
 ---
 
-## 🚀 Utilisation
+##  Utilisation
 
 ### Mode Vocal (Défaut)
 ```bash
@@ -491,16 +491,16 @@ Tapez vos commandes directement.
 
 ---
 
-## 📝 Exemples de Commandes
+##  Exemples de Commandes
 
-### 💬 Conversation
+###  Conversation
 ```
 "Comment vas-tu ?"
 "Quelle est notre dernière interaction ?"
 "Quel est mon film préféré ?" (si mémorisé)
 ```
 
-### ⚡ Actions Simples
+###  Actions Simples
 ```
 "Lance Spotify"
 "Monte le volume"
@@ -511,7 +511,7 @@ Tapez vos commandes directement.
 "Fais une capture d'écran"
 ```
 
-### 🌐 Navigation Web
+###  Navigation Web
 ```
 "Va sur YouTube et cherche Messi"
 "Cherche la météo à Paris sur Google"
@@ -519,14 +519,14 @@ Tapez vos commandes directement.
 "Ouvre Spotify web et lance ma playlist"
 ```
 
-### 📂 Gestion Fichiers
+###  Gestion Fichiers
 ```
 "Crée un fichier meteo.txt sur le bureau avec la température actuelle"
 "Lis le fichier notes.txt"
 "Liste les fichiers du dossier Documents"
 ```
 
-### 🎯 Tâches Complexes
+###  Tâches Complexes
 ```
 "Va sur Google, cherche 'prix Bitcoin', copie le résultat et crée un fichier crypto.txt"
 "Ouvre Spotify et joue ma dernière playlist"
@@ -535,7 +535,7 @@ Tapez vos commandes directement.
 
 ---
 
-## 🧪 Technologies Utilisées
+##  Technologies Utilisées
 
 | Composant | Technologie | Rôle |
 |-----------|-------------|------|
@@ -553,7 +553,7 @@ Tapez vos commandes directement.
 
 ---
 
-## 🎨 Architecture Technique
+##  Architecture Technique
 
 **Modularité :**
 - `brain/` : Analyseur d'intention, orchestrateur, exécuteur
@@ -562,15 +562,15 @@ Tapez vos commandes directement.
 - `config.py` : Configuration centralisée
 
 **Points forts :**
-- ✅ **100% Local** : Aucun appel cloud, données privées
-- ✅ **Hybride** : Vision + DOM pour performance optimale
-- ✅ **Adaptable** : Fonctionne sur n'importe quelle interface
-- ✅ **Robuste** : Fallbacks multiples, détection erreurs
-- ✅ **Extensible** : Ajout facile de nouveaux skills
+-  **100% Local** : Aucun appel cloud, données privées
+-  **Hybride** : Vision + DOM pour performance optimale
+-  **Adaptable** : Fonctionne sur n'importe quelle interface
+-  **Robuste** : Fallbacks multiples, détection erreurs
+-  **Extensible** : Ajout facile de nouveaux skills
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 **Erreur : "WebHelper not connected"**
 - Vérifiez que Chrome est lancé avec `--remote-debugging-port=9222`
@@ -590,7 +590,7 @@ Tapez vos commandes directement.
 
 ---
 
-## 🤝 Contribution
+##  Contribution
 
 Les contributions sont les bienvenues ! Points d'amélioration :
 - Support multi-langues (actuellement français)
@@ -600,13 +600,13 @@ Les contributions sont les bienvenues ! Points d'amélioration :
 
 ---
 
-## 📜 Licence
+##  Licence
 
 MIT License - Voir `LICENSE` pour détails
 
 ---
 
-## 🙏 Remerciements
+##  Remerciements
 
 - **Microsoft** : OmniParser (YOLOv8 + Florence-2)
 - **PaddlePaddle** : PaddleOCR
