@@ -1,4 +1,4 @@
-# 🤖 MUAG - Multi-modal Autonomous Agent (Local)
+#  MUAG - Multi-modal Autonomous Agent (Local)
 
 **MUAG** est un agent autonome multimodal entièrement **local**, capable d'interagir vocalement, de réfléchir et d'exécuter des actions complexes sur votre ordinateur en "voyant" l'écran comme un humain.
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 📺 Démonstrations Vidéo
+##  Démonstrations Vidéo
 
 ### 1.  Mémoire & Conversation Contextuelle
 *Démonstration de la persistance de la mémoire entre les sessions et du rappel des interactions passées.*
