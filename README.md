@@ -242,7 +242,7 @@ Screenshot → Preprocessing → Vision Detection → Annotation → VLM Decisio
 - Reconstruction de l'image avec **boîtes englobantes**
 - **ID numériques uniques** superposés en vert sur chaque élément
 - Distinction visuelle par type (boutons en bleu, inputs en rouge, textes OCR en cyan)
-
+<img width="1280" height="1028" alt="Image" src="https://github.com/user-attachments/assets/a557f374-16ca-4226-8d31-717a2528b385" />
 ##### **Étape 4 : Dual-VLM Decision**
 
 **VLM #1 - Planificateur (qwen2.5-vl) :**
