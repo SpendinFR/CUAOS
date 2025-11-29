@@ -1,0 +1,38 @@
+# Modèles (GROS FICHIERS)
+weights/**/*.pt
+weights/**/*.pth
+weights/**/*.safetensors
+weights/**/*.bin
+models/**/*.pt
+models/**/*.pth
+
+# Screenshots (générés)
+data/screenshots/*.png
+data/screenshots/*.jpg
+
+# Fichiers backup
+*.backup
+*.backup2
+*.backup_step3
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+*.egg-info/
+
+# Mémoire
+data/memory.json
+data/user_profile.json
+
+# Système
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Debug
+debug_*.png
+debug_*.py

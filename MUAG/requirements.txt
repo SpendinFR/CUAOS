@@ -1,0 +1,65 @@
+# Core Dependencies
+requests>=2.31.0
+numpy>=1.24.0
+pillow>=10.0.0
+
+# Voice - STT/TTS
+faster-whisper>=0.10.0
+TTS>=0.22.0
+pyaudio>=0.2.13
+sounddevice>=0.4.6
+scipy>=1.11.0
+webrtcvad>=2.0.10
+
+# IMPORTANT: VLM (Vision-Language Model) pour CUA
+# Installer via Ollama (pas pip):
+#   ollama pull qwen2-vl:7b
+# OU:
+#   ollama pull llava:7b
+
+# AI/ML Models
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.35.0
+sentencepiece>=0.1.99
+
+# Computer Automation (Pure CUA - Vision-Based)
+pyautogui>=0.9.54
+opencv-python>=4.8.0  # OpenCV pour preprocessing et monitoring
+pyperclip>=1.8.2
+keyboard>=0.13.5
+mouse>=0.7.1
+psutil>=5.9.0
+
+# OCR avancé (PaddleOCR au lieu de Tesseract)
+paddleocr>=2.7.0  # OCR multi-langues performant
+paddlepaddle>=2.5.0  # Backend de PaddleOCR
+
+# Segmentation (SAM - Segment Anything Model original)
+segment-anything>=1.0
+
+# Vision Processing
+scikit-image>=0.21.0  # Preprocessing avancé
+imutils>=0.5.4  # Utilitaires OpenCV
+
+# Note: Pas besoin de Playwright/Selenium
+# L'agent CUA contrôle tout via PyAutoGUI + Vision (VLM + PaddleOCR + YOLO)
+
+# Email
+google-auth>=2.23.0
+google-auth-oauthlib>=1.1.0
+google-auth-httplib2>=0.1.1
+google-api-python-client>=2.100.0
+
+# Utilities
+python-dotenv>=1.0.0
+colorama>=0.4.6
+pyyaml>=6.0.1
+jsonschema>=4.19.0
+python-dateutil>=2.8.2
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+keyboard>=0.13.5

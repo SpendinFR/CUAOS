@@ -1,0 +1,62 @@
+[
+  {
+    "description": "Ouvrir Spotify",
+    "commande": "start spotify",
+    "usage_count": 2,
+    "date_creation": "2025-11-15T17:09:11.440110"
+  },
+  {
+    "description": "Ouvrir Chrome",
+    "commande": "start chrome",
+    "usage_count": 1,
+    "date_creation": "2025-11-15T17:09:40.945816"
+  },
+  {
+    "description": "Aller sur Facebook.com",
+    "commande": "start chrome https://facebook.com",
+    "usage_count": 1,
+    "date_creation": "2025-11-15T17:09:40.945816"
+  },
+  {
+    "description": "Ouvrir l'application calculatrice",
+    "commande": "start calc.exe",
+    "usage_count": 1,
+    "date_creation": "2025-11-20T20:45:26.381522"
+  },
+  {
+    "description": "Lance YouTube",
+    "commande": "start youtube.exe",
+    "usage_count": 1,
+    "date_creation": "2025-11-20T20:47:03.560201"
+  },
+  {
+    "description": "Rechercher vidéo de Messi",
+    "commande": "start chrome https://www.google.com/search?q=vidéo+de+Messi",
+    "usage_count": 1,
+    "date_creation": "2025-11-20T20:47:05.812220"
+  },
+  {
+    "description": "Ouvrir la calculatrice",
+    "commande": "response",
+    "usage_count": 5,
+    "date_creation": "2025-11-26T23:31:01.166479"
+  },
+  {
+    "description": "Ouvrir Microsoft Word pour créer un nouveau fichier texte.",
+    "commande": "response",
+    "usage_count": 1,
+    "date_creation": "2025-11-27T14:32:26.606734"
+  },
+  {
+    "description": "Lancer l'application Calculatrice",
+    "commande": "response",
+    "usage_count": 1,
+    "date_creation": "2025-11-27T17:08:20.008116"
+  },
+  {
+    "description": "Lancer Spotify",
+    "commande": "response",
+    "usage_count": 2,
+    "date_creation": "2025-11-29T00:52:19.303252"
+  }
+]
