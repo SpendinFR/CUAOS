@@ -432,7 +432,7 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-**4. Télécharger les poids OmniParser**
+**4. Télécharger les poids OmniParser et installer PaddleOCR**
 Téléchargez les modèles YOLOv8 et Florence-2 dans `weights/` :
 ```
 weights/
@@ -441,7 +441,11 @@ weights/
 └── icon_caption_florence/
     └── model.safetensors  # Florence-2
 ```
-
+```
+-OmniParser v2.0 : https://huggingface.co/microsoft/OmniParser-v2.0
+-Florence-2-base-ft : https://huggingface.co/microsoft/Florence-2-base-ft
+-PaddleOCR : pip install paddlepaddle paddleocr
+```
 **5. Configuration (optionnel)**
 Ajustez `config.py` selon vos besoins :
 ```python
