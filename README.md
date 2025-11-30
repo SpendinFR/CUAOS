@@ -399,7 +399,7 @@ input, textarea, [contenteditable='true'], [role='textbox']
 - **Ollama** installé et en cours d'exécution
 - **Google Chrome** (pour WebHelper Playwright)
 
-### Modèles Ollama Recommandés
+### Modèles Ollama utilisés sur Démos
 ```bash
 # VLM #1 (Planification) - 4.7GB
 ollama pull qwen2.5-vl
@@ -457,29 +457,17 @@ ENABLE_KEYBOARD_CONTROL = True  # Touches P/C/Q
 AUTO_CLOSE_POPUPS = True  # Fermer popups web auto
 ```
 
-**6. Lancer Chrome en mode debug (pour WebHelper)**
-```bash
-# Windows
-"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222
-
-# Linux
-google-chrome --remote-debugging-port=9222
-
-# Mac
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
-```
-
 ---
 
 ##  Utilisation
 
-### Mode Vocal (Défaut)
+### Mode Vocal 
 ```bash
 python main.py
 ```
 Parlez naturellement après le signal sonore.
 
-### Mode Texte (Debug)
+### Mode Texte 
 ```bash
 python main.py --text
 ```
@@ -578,12 +566,11 @@ Tapez vos commandes directement.
 - Port déjà utilisé ? Changez dans `config.py`
 
 **VLM timeout**
-- Réduisez la résolution d'image dans `config.py`
-- Modèles trop lourds ? Essayez `qwen3-vl:4b` uniquement
+- Modèles trop lourds ? Essayez `qwen2.5-vl` uniquement
 
 **Actions imprécises**
-- Ajustez `scale_factor` si multi-écrans
 - Activez `ENABLE_PREPROCESSING` dans `config.py`
+Par défaut le préprocessing utilise la partie gauche de l'écran, regardez vos screenshots.
 
 **Boucle infinie détectée**
 - L'agent s'arrête automatiquement après 6 répétitions
@@ -594,10 +581,9 @@ Tapez vos commandes directement.
 ##  Contribution
 
 Les contributions sont les bienvenues ! Points d'amélioration :
-- Support multi-langues (actuellement français)
-- Nouveaux skills (email, calendrier, etc.)
+- Auto Learning et mémorisation des actions
+- Connexion API 
 - Optimisation VLM (quantization, distillation)
-- Tests automatisés
 
 ---
 
@@ -617,8 +603,6 @@ MIT License - Voir `LICENSE` pour détails
 
 ---
 
-**⚠️ Disclaimer :** MUAG est un projet expérimental. Utilisez-le de manière responsable et sécurisée. L'agent peut effectuer des actions système - assurez-vous de comprendre ce qu'il fait avant de l'autoriser sur des environnements de production.
-
 ---
 
-*Projet développé pour repousser les limites des agents autonomes locaux* 🚀
+*Projet développé pour repousser les limites des agents autonomes locaux* 
