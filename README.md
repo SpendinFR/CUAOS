@@ -585,7 +585,12 @@ Par défaut le préprocessing utilise la partie gauche de l'écran, regardez vos
 ##  Contribution
 
 Les contributions sont les bienvenues ! Points d'amélioration :
-- Auto Learning et mémorisation des actions
+- LLM décision Gui Controller pour supporter + d'actions (mettre des Garde fous)
+- LLM vérification en 2 étapes VLM1 suggestion + URL (taskcompleted : true/false)
+- Mode Requiert Utilisateur amélioré pour tout l'Orchestrateur
+- Actions très complexe(inconnu) : Planificateur et only CUA Vision
+- Auto Learning : chercher commment manipuler logiciel et créer un plan 
+- Mémorisation des actions : Comparer click ID avec Semantic research pour éviter appel VLM
 - Connexion API 
 - Optimisation VLM (quantization, distillation)
 
